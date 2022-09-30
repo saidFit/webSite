@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Splash&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+              /* Josefin Sans */
+    margin: 1px 0 0 3px;
+    padding: 0;
+    outline: none;
+  
+}
+
+body{
+    background: rgba(69, 69, 196, 0.938);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container-global{
+   
+    width: 100%;
+    max-width: 400px;
+   
+}
+
+.container-select{
+    background: #ffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 17px;
+    margin-bottom: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container-select div:nth-child(1) p{
+    font-size: 19px;
+    font-style:italic;
+   
+}
+.fa-angle-down{
+    transition: all .5s ease;
+}
+
+
+ .active .fa-angle-down{
+   transform: rotate(-180deg);
+ 
+}
+
+
+
+.container-countrys{
+    
+max-height: 250px;
+overflow-y: auto;
+  
+/* overflow-x: hidden; */
+
+}
+
+.background{
+    background: #0f63fd;
+    color: #fff;
+}
+
+.change{
+    height: fit-content !important;
+}
+
+
+.container-countrys div .no{
+   background: none;
+   pointer-events: none;
+}
+
+
+.container-under{
+    opacity: 0;
+    pointer-events: none;
+    background:#fff;
+    padding: 16px;
+    border-radius: 10px;
+    height: fit-content;
+    /* border: 1px solid red; */
+    transition: all .4s ease;
+}
+.show{
+    opacity: 1;
+    pointer-events: initial;
+}
+.container-input{
+    width: 99.5%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.fa-magnifying-glass{
+    position: absolute;
+    top: 13px;
+    left: 4px;
+    opacity: .5;
+}
+.container-input input{
+    width: 100%;
+    padding: 10px 28px;
+    margin: 0;
+    font-size: 20px;
+}
+
+.container-countrys::-webkit-scrollbar {
+    width: 0;
+    cursor: pointer;
+
+}
+.container-countrys::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+    cursor: pointer;
+
+}
+
+.container-countrys::-webkit-scrollbar-thumb
+  {
+    background: #757474;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.container-countrys::-webkit-scrollbar-track {
+    background: #fef9f9;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.container-countrys div p{
+    padding: 19px 9px;
+    margin: 0 7px 0 0;
+    transition: all .5s ease;
+}
+.container-countrys div p:hover{
+    background: #0f63fd;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 9px;
+}
